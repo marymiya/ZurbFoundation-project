@@ -1,0 +1,23 @@
+@require "variables.styl"
+@require "button.styl"
+@require "block.styl"
+@require "story.styl"
+
+.main
+    background url(../i/main.jpg) 50%
+    min-height 1000px
+    position relative
+
+    &::before
+      content ""
+      position absolute
+      top 0
+      left 0
+      width 100%
+      height 100%
+      background linear-gradient(to bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9))
+
+    &-content
+      position relative
+      color #fff
+      font-size 30px

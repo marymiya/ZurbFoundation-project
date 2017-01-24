@@ -1,0 +1,39 @@
+.story {
+  padding: 90px 0 110px;
+}
+.story-img {
+  margin: auto;
+  width: 380px;
+  height: 259px;
+  position: relative;
+}
+.story-img_hover {
+  opacity: 0;
+  width: 380px;
+  height: 259px;
+  background: linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  color: $color-white;
+}
+.story-img_hover p {
+  font: 600 18px $font-montserrat;
+  text-transform: uppercase;
+}
+.story-img:hover {
+  background-color: $color-light-blue;
+}
+.story-img:hover .story-img_hover {
+  opacity: 1;
+}
+.story-img:hover img {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
