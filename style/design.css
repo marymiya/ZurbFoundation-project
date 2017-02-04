@@ -1,0 +1,24 @@
+.design {
+  background: linear-gradient(to right, $color-design-bg, $color-design-bg), url("../i/design-bg.jpg");
+  background-size: cover;
+  position: relative;
+}
+.design-img {
+  position: relative;
+}
+.design-img-phone {
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+}
+.accordion-content {
+  max-height: 220px;
+  overflow: overlay;
+}
+.accordion-title:before {
+  content: '\e80b';
+  font-family: "fontello";
+}
+.is-active .accordion-title:before {
+  content: '\e80c';
+}

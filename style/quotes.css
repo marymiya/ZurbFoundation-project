@@ -1,0 +1,57 @@
+.quotes {
+  background-color: $color-quotes-bg;
+  margin-top: 120px;
+  padding: 70px 0;
+}
+.quotes-square {
+  width: 150px;
+  height: 150px;
+  border: 3px solid $color-facts;
+  float: right;
+  padding: 25px;
+}
+.quotes-square .icon {
+  font-size: 60px;
+  color: $color-facts;
+  display: block;
+}
+.quotes-item_text {
+  font: 300 24px $font-roboto;
+  font-style: italic;
+  color: $color-gray-text;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.quotes-item_author {
+  font: 400 24px $font-kaushanscript;
+  color: $color-black-text;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.quotes-item_author:before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  color: $color-red;
+  background-color: $color-red;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.orbit-container {
+  outline: none;
+}
+.orbit-button {
+  color: $color-arrows;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.orbit-button:hover,
+.orbit-button:focus,
+.orbit-button:active {
+  background: none;
+}
+.orbit-button:hover {
+  color: $color-arrows-hover;
+}

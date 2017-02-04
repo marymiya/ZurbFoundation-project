@@ -1,0 +1,72 @@
+.team-img {
+  width: 380px;
+  height: 470px;
+  position: relative;
+}
+.team-img_hover {
+  opacity: 0;
+  width: 380px;
+  height: 470px;
+  background: linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  color: $color-white;
+}
+.team-img_hover p {
+  font: 600 18px $font-montserrat;
+  text-transform: uppercase;
+}
+.team-img:hover {
+  background-color: $color-facts;
+}
+.team-img:hover .team-img_hover {
+  opacity: 1;
+}
+.team-img:hover img {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+.team-social {
+  width: 225px;
+  margin: auto;
+}
+.team-social_item {
+  border-left: 1px solid $color-social-hover;
+  background: $color-social;
+  padding: 10px 0;
+}
+.team-social_item .icon {
+  font-size: 27px;
+  color: $color-social-hover;
+}
+.team-social_item:hover {
+  border-left: 1px solid $color-social;
+  background: $color-social-hover;
+}
+.team-social_item:hover .icon {
+  color: $color-social;
+}
+.team-social_item.mod-first {
+  border-left: 0;
+}
+.team-dscr {
+  margin-top: 30px;
+}
+.team-name {
+  font: 400 14px $font-montserrat;
+  color: $color-black-text;
+  margin: 0;
+}
+.team-profession {
+  font: 400 14px $font-roboto;
+  font-style: italic;
+  color: $color-gray-text;
+  margin: 15px 0 0;
+}

@@ -1,0 +1,22 @@
+.block-header {
+  margin-top: 110px;
+}
+.block-header .title {
+  font: 600 34px $font-montserrat;
+  text-transform: uppercase;
+}
+.block-header .title.mod-coursive {
+  font: 400 24px $font-kaushanscript;
+  text-transform: initial;
+}
+.block-header .hr {
+  width: 60px;
+  height: 3px;
+  background-color: $color-red;
+  border: 0;
+  margin: 45px auto;
+}
+.block-header .dscr {
+  font: 400 15px $font-roboto;
+  color: $color-gray-text;
+}

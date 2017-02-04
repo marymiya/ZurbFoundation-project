@@ -1,0 +1,79 @@
+.team
+
+    &-img
+        width 380px
+        height 470px
+        position relative
+        mix-transition()
+
+        &_hover
+            opacity 0
+            width 380px
+            height 470px
+            background linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow)
+            position absolute
+            left -10px
+            top -10px
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            cursor: pointer;
+            color $color-white
+            mix-transition()
+
+            p
+                font 600 18px $font-montserrat
+                text-transform uppercase
+
+        img
+            mix-transition()
+
+        &:hover
+            background-color $color-facts
+
+            .team-img_hover
+                opacity 1
+
+            img
+                position relative
+                top -10px
+                left -10px
+
+    &-social
+        width 225px
+        margin auto
+
+        &_item
+            border-left 1px solid $color-social-hover
+            background $color-social
+            mix-transition()
+            padding 10px 0
+
+            .icon
+                font-size 27px
+                color $color-social-hover
+
+            &:hover
+                border-left 1px solid $color-social
+                background $color-social-hover
+
+                .icon
+                    color $color-social
+
+            &.mod-first
+                border-left 0
+
+    &-dscr
+        margin-top 30px
+
+    &-name
+        font 400 14px $font-montserrat
+        color $color-black-text
+        margin 0
+
+    &-profession
+        font 400 14px $font-roboto
+        font-style italic
+        color $color-gray-text
+        margin 15px 0 0

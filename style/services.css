@@ -1,0 +1,17 @@
+.services-line {
+  border-top: 1px;
+}
+.services .icon {
+  color: $color-facts;
+  font-size: 35px;
+}
+.services-title {
+  font: 400 14px $font-montserrat;
+  color: $color-black-text;
+  text-transform: uppercase;
+}
+.services-dscr {
+  font: 400 15px $font-roboto;
+  color: $color-gray-text;
+  line-height: 1.5;
+}

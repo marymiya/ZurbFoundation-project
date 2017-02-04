@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 .story-img:hover {
-  background-color: $color-light-blue;
+  background-color: $color-facts;
 }
 .story-img:hover .story-img_hover {
   opacity: 1;

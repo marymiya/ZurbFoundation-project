@@ -1,0 +1,20 @@
+.facts {
+  background-color: $color-facts;
+  color: $color-white;
+}
+.facts-wr {
+  padding: 75px 0;
+}
+.facts .column {
+  border-right: 1px solid $color-facts-border;
+}
+.facts .column:first-child {
+  border-left: 1px solid $color-facts-border;
+}
+.facts-num {
+  font: 700 72px $font-montserrat;
+}
+.facts-dscr {
+  font: 400 14px $font-montserrat;
+  margin: 0;
+}
