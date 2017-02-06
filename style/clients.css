@@ -1,0 +1,35 @@
+.clients {
+  background: linear-gradient(to right, $color-design-bg, $color-design-bg), url("../i/clients-bg.jpg");
+  background-size: cover;
+  padding-bottom: 130px;
+}
+.clients-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+}
+.clients-name {
+  font: 400 14px $font-montserrat;
+  color: $color-black-text;
+  margin: 0;
+}
+.clients-profession {
+  font: 300 15px $font-roboto;
+  font-style: italic;
+  color: $color-gray-text;
+  margin: 10px 0 20px 0;
+}
+.clients .hr.mod-testimonial {
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  border: 0;
+  margin: 0;
+}
+.clients-comment {
+  font: 400 15px $font-roboto;
+  color: $color-light-gray-text;
+  line-height: 1.5;
+  margin-top: 20px;
+  max-width: 370px;
+}

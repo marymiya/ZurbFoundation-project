@@ -1,0 +1,52 @@
+.blog-img {
+  position: relative;
+}
+.blog-date {
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  width: 62px;
+  height: 72px;
+  background: $color-facts;
+  color: $color-white;
+  text-align: center;
+}
+.blog-date_day {
+  font: 700 30px $font-montserrat;
+  margin: 7px 0 0;
+}
+.blog-date_month {
+  font: 300 15px $font-roboto;
+  font-style: italic;
+  margin: 0;
+}
+.blog-title {
+  font: 400 14px $font-montserrat;
+  color: $color-black-text;
+  margin: 20px 0 0;
+}
+.blog-dscr {
+  font: 400 15px $font-roboto;
+  color: $color-gray-text;
+  margin: 20px 0 0;
+}
+.blog-info {
+  margin-top: 25px;
+  padding: 20px 0 0;
+  border-top: 1px solid $color-blog-info;
+}
+.blog-info_item {
+  margin-left: 5px;
+}
+.blog-info_item:first-child {
+  margin: 0;
+}
+.blog-info .icon {
+  font: 15px;
+  color: $color-facts;
+}
+.blog-info span {
+  font: 300 15px $font-roboto;
+  font-style: italic;
+  color: $color-gray-text;
+}

@@ -62,8 +62,7 @@
   left: -10px;
 }
 .main {
-  background: url("../i/main.jpg") 50%;
-  min-height: 1000px;
+  min-height: 989px;
   position: relative;
 }
 .main::before {
@@ -73,12 +72,14 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(252,227,138,0.9), rgba(243,129,129,0.9));
+  background: linear-gradient(to bottom, rgba(252,227,138,0.7), rgba(243,129,129,0.7));
+  z-index: 1;
 }
 .main-content {
   position: relative;
   color: #fff;
   font-size: 30px;
+  z-index: 3;
 }
 .main-hr {
   width: 60px;
@@ -304,4 +305,187 @@
   font-style: italic;
   color: #999;
   margin: 15px 0 0;
+}
+.logos {
+  margin-top: 120px;
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+.work-img {
+  display: block;
+  position: relative;
+}
+.work-img_hover {
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  transition: ease 0.5s all;
+}
+.work-img_hover .icon {
+  font-size: 28px;
+}
+.work-img:hover .work-img_hover {
+  opacity: 1;
+}
+.work-title {
+  font: 400 14px montserrat, arial, sans-serif;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+}
+.work-dscr {
+  font: 300 15px roboto, arial, sans-serif;
+  font-style: italic;
+  margin: 10px 0 0 0;
+}
+.testimonial {
+  margin: 100px 0 130px;
+}
+.testimonial-img {
+  width: 213px;
+  height: 213px;
+  border-radius: 106px;
+  overflow: hidden;
+  float: right;
+}
+.testimonial-item_text {
+  font: 300 24px roboto, arial, sans-serif;
+  font-style: italic;
+  color: #999;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.testimonial-item_author {
+  font: 400 24px "kaushan script", arial, sans-serif;
+  color: #333;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.testimonial-item_author:before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  color: #f38181;
+  background-color: #f38181;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.clients {
+  background: linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../i/clients-bg.jpg");
+  background-size: cover;
+  padding-bottom: 130px;
+}
+.clients-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+}
+.clients-name {
+  font: 400 14px montserrat, arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+.clients-profession {
+  font: 300 15px roboto, arial, sans-serif;
+  font-style: italic;
+  color: #999;
+  margin: 10px 0 20px 0;
+}
+.clients .hr.mod-testimonial {
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  border: 0;
+  margin: 0;
+}
+.clients-comment {
+  font: 400 15px roboto, arial, sans-serif;
+  color: #777;
+  line-height: 1.5;
+  margin-top: 20px;
+  max-width: 370px;
+}
+.blog-img {
+  position: relative;
+}
+.blog-date {
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  width: 62px;
+  height: 72px;
+  background: #95e1d3;
+  color: #fff;
+  text-align: center;
+}
+.blog-date_day {
+  font: 700 30px montserrat, arial, sans-serif;
+  margin: 7px 0 0;
+}
+.blog-date_month {
+  font: 300 15px roboto, arial, sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+.blog-title {
+  font: 400 14px montserrat, arial, sans-serif;
+  color: #333;
+  margin: 20px 0 0;
+}
+.blog-dscr {
+  font: 400 15px roboto, arial, sans-serif;
+  color: #999;
+  margin: 20px 0 0;
+}
+.blog-info {
+  margin-top: 25px;
+  padding: 20px 0 0;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-info_item {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.blog-info_item:first-child {
+  margin: 0;
+}
+.blog-info .icon {
+  font: 15px;
+  color: #95e1d3;
+}
+.blog-info span {
+  font: 300 15px roboto, arial, sans-serif;
+  font-style: italic;
+  color: #999;
+}
+.map {
+  margin-top: 115px;
+}
+.map-wr {
+  width: 100%;
+  height: 200px;
+  background: #999;
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
