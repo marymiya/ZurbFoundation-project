@@ -7,7 +7,7 @@
   left: -10px;
   width: 62px;
   height: 72px;
-  background: $color-facts;
+  background: $color-turquoise;
   color: $color-white;
   text-align: center;
 }
@@ -32,7 +32,7 @@
 }
 .blog-info {
   margin-top: 25px;
-  padding: 20px 0 0;
+  padding: 20px 0 30px;
   border-top: 1px solid $color-blog-info;
 }
 .blog-info_item {
@@ -43,7 +43,7 @@
 }
 .blog-info .icon {
   font: 15px;
-  color: $color-facts;
+  color: $color-turquoise;
 }
 .blog-info span {
   font: 300 15px $font-roboto;

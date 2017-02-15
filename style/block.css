@@ -2,8 +2,28 @@
   font: 600 150px $font-montserrat;
   text-transform: uppercase;
 }
+@media $tablet {
+  .block-title {
+    font-size: 50px;
+  }
+}
+@media $phone {
+  .block-title {
+    font-size: 30px;
+  }
+}
 .block-title.mod-coursive {
   font: 400 52px $font-kaushanscript;
+}
+@media $tablet-only {
+  .block-title.mod-coursive {
+    font-size: 32px;
+  }
+}
+@media $phone {
+  .block-title.mod-coursive {
+    font-size: 22px;
+  }
 }
 .block-dscr {
   font: 400 15px $font-roboto;

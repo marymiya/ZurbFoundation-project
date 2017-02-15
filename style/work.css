@@ -2,6 +2,9 @@
   display: block;
   position: relative;
 }
+.work-img img {
+  width: 100%;
+}
 .work-img_hover {
   opacity: 0;
   background: linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow);

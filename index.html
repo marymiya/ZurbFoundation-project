@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="style/app.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/fontello.css">
+    <link rel="stylesheet" href="style/motion-ui.min.css">
+
     <link rel="stylesheet" href="style/style.css">
        <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
-
+       <!-- Insert this within your head tag and after foundation.css -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
   </head>
 
@@ -21,15 +24,43 @@
 
     <div class="main">
 
-        <video class="video" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" playsinline autoplay muted loop>
+        <video class="video" poster="i/video-bg.jpg" playsinline autoplay muted loop>
             <source src="video/background-video.webm" type="video/webm">
-            <!-- <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4"> -->
         </video>
 
         <div class="main-content">
 
-          <div class="row">
+          <div class="row expanded">
 
+            <div class="large-12 medium-12 small-12">
+
+              <div data-sticky-container>
+              <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+                <div class="top-bar-title">
+                  <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                    <button class="menu-icon dark" type="button" data-toggle></button>
+                  </span>
+                  <strong>MoJo</strong>
+                </div>
+                <div id="responsive-menu">
+                  <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                      <li>
+                        <a href="#">About</a>
+                      </li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">Work</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="large-8 columns small-centered text-center">
 
               <p class="block-title mod-coursive">Creative Template</p>
@@ -52,82 +83,82 @@
 
         <div class="row">
 
-          <div class="large-12">
+            <div class="large-10 small-10 column small-centered text-center">
 
-              <div class="large-10 small-centered text-center">
+                <div class="block-header">
 
-                  <div class="block-header">
+                    <h2>
 
-                      <h2>
+                        <p class="title mod-coursive">What we do</p>
 
-                          <p class="title mod-coursive">What we do</p>
+                        <p class="title">story about us</p>
 
-                          <p class="title">story about us</p>
+                    </h2>
 
-                      </h2>
+                    <hr class="hr">
 
-                      <hr class="hr">
+                    <p class="dscr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
 
-                      <p class="dscr">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
+                </div>
 
-                  </div>
+            </div>
 
-              </div>
+            <div class="large-12 medium-12 small-8 column small-centered">
 
-              <div class="large-12">
+                <div class="row">
 
-                  <div class="large-4 column">
+                    <div class="large-4 medium-4 small-12 column">
 
-                      <div class="story-img">
+                        <div class="story-item">
 
-                          <img src="i/1.jpg" alt="" width="390" height="259">
+                            <img class="story-item_img" src="i/1.jpg" alt="" width="390" height="259">
 
-                          <div class="story-img_hover">
+                            <div class="story-item_hover">
 
-                              <i>icon</i>
-                              <p>super team</p>
+                                <i class="icon icon-users"></i>
+                                <p>super team</p>
 
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="large-4 medium-4 small-12 column">
+
+                      <div class="story-item">
+
+                          <img class="story-item_img" src="i/3.jpg" alt="" width="390" height="259">
+
+                          <div class="story-item_hover">
+                              <i class="icon icon-desktop"></i>
+                              <p>mega design</p>
                           </div>
 
                       </div>
 
-                  </div>
+                    </div>
 
-                  <div class="large-4 column">
+                    <div class="large-4 medium-4 small-12 column">
 
-                    <div class="story-img">
+                      <div class="story-item">
 
-                        <img src="i/3.jpg" alt="" width="390" height="259">
+                          <img class="story-item_img" src="i/3.jpg" alt="" width="390" height="259">
 
-                        <div class="story-img_hover">
-                            <i>icon</i>
-                            <p>mega design</p>
-                        </div>
+                          <div class="story-item_hover">
+                              <i class="icon icon-code"></i>
+                              <p>html/css</p>
+                          </div>
+
+                      </div>
 
                     </div>
 
-                  </div>
+                </div>
 
-                  <div class="large-4 column">
-
-                    <div class="story-img">
-
-                        <img src="i/3.jpg" alt="" width="390" height="259">
-
-                        <div class="story-img_hover">
-                            <i>icon</i>
-                            <p>html/css</p>
-                        </div>
-
-                    </div>
-
-                  </div>
-
-              </div>
-
-          </div>
+            </div>
 
         </div>
 
@@ -137,7 +168,7 @@
 
         <div class="row">
 
-            <div class="large-3 column text-center">
+            <div class="large-3 small-6 column text-center">
 
                 <div class="facts-wr">
 
@@ -149,7 +180,7 @@
 
             </div>
 
-            <div class="large-3 column text-center">
+            <div class="large-3 small-6 column text-center">
 
                 <div class="facts-wr">
 
@@ -161,7 +192,7 @@
 
             </div>
 
-            <div class="large-3 column text-center">
+            <div class="large-3 small-6 column text-center">
 
                 <div class="facts-wr">
 
@@ -173,7 +204,7 @@
 
             </div>
 
-            <div class="large-3 column text-center">
+            <div class="large-3 small-6 column text-center">
 
                 <div class="facts-wr">
 
@@ -185,194 +216,23 @@
 
             </div>
 
-
         </div>
 
     </div>
 
     <div class="services">
 
-      <div class="large-10 small-centered text-center">
+        <div class="row">
 
-          <div class="block-header">
-
-              <h2>
-
-                  <p class="title mod-coursive">We work with</p>
-
-                  <p class="title">Amazing Services</p>
-
-              </h2>
-
-              <hr class="hr">
-
-          </div>
-
-          <div class="row">
-
-              <div class="large-12">
-
-                  <div class="services-line">
-
-                      <div class="large-4 column">
-
-                          <div class="row">
-
-                              <div class="large-2 column">
-                                  <i class="icon"></i>
-                              </div>
-
-                              <div class="large-10 column text-left">
-
-                                  <p class="services-title">Photography</p>
-
-                                  <p class="services-dscr">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                  </p>
-
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                      <div class="large-4 column">
-
-                          <div class="row">
-
-                              <div class="large-2 column">
-                                  <i class="icon icon-laptop"></i>
-                              </div>
-
-                              <div class="large-10 column text-left">
-
-                                  <p class="services-title">Web Design</p>
-
-                                  <p class="services-dscr">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                  </p>
-
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                      <div class="large-4 column">
-
-                          <div class="row">
-
-                              <div class="large-2 column">
-                                  <i class="icon icon-brush"></i>
-                              </div>
-
-                              <div class="large-10 column text-left">
-
-                                  <p class="services-title">Creativity</p>
-
-                                  <p class="services-dscr">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                  </p>
-
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                  </div>
-
-                  <div class="services-line">
-
-                      <div class="large-4 column">
-
-                          <div class="row">
-
-                              <div class="large-2 column">
-                                  <i class="icon"></i>
-                              </div>
-
-                              <div class="large-10 column text-left">
-
-                                  <p class="services-title">SEO</p>
-
-                                  <p class="services-dscr">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                  </p>
-
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                      <div class="large-4 column">
-
-                          <div class="row">
-
-                              <div class="large-2 column">
-                                  <i class="icon icon-code"></i>
-                              </div>
-
-                              <div class="large-10 column text-left">
-
-                                  <p class="services-title">CSS/HTML</p>
-
-                                  <p class="services-dscr">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                  </p>
-
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                      <div class="large-4 column">
-
-                          <div class="row">
-
-                              <div class="large-2 column">
-                                  <i class="icon icon-mobile"></i>
-                              </div>
-
-                              <div class="large-10 column text-left">
-
-                                  <p class="services-title">digital</p>
-
-                                  <p class="services-dscr">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                                  </p>
-
-                              </div>
-
-                          </div>
-
-                      </div>
-
-                  </div>
-
-              </div>
-
-          </div>
-
-      </div>
-
-    </div>
-
-    <div class="design">
-
-        <div class="expanded row">
-
-          <div class="large-10 small-centered text-center">
+          <div class="large-10 small-10 column small-centered text-center">
 
               <div class="block-header">
 
                   <h2>
 
-                      <p class="title mod-coursive">For all devices</p>
+                      <p class="title mod-coursive">We work with</p>
 
-                      <p class="title">unique design</p>
+                      <p class="title">Amazing Services</p>
 
                   </h2>
 
@@ -382,12 +242,198 @@
 
           </div>
 
-          <div class="large-4 small-centered">
+        </div>
 
-              <div class="design-img">
+        <div class="row">
 
-                  <img src="i/bg-1.png" alt="" class="design-img-tablet">
-                  <img src="i/bg-2.png" alt="" class="design-img-phone">
+            <div class="large-12 column">
+
+                <div class="services-line">
+
+                    <div class="row">
+
+                        <div class="large-4 medium-6 small-12 column">
+
+                            <div class="row">
+
+                                <div class="large-3 medium-2 small-2 text-center column">
+                                    <i class="icon icon-camera-alt"></i>
+                                </div>
+
+                                <div class="large-9 column text-left">
+
+                                    <p class="services-titlmedium-10 small-10 e">Photography</p>
+
+                                    <p class="services-dscr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="large-4 medium-6 small-12 column">
+
+                            <div class="row">
+
+                                <div class="large-3 medium-2 small-2 text-center column">
+                                    <i class="icon icon-website"></i>
+                                </div>
+
+                                <div class="large-9 medium-10 small-10 column text-left">
+
+                                    <p class="services-title">Web Design</p>
+
+                                    <p class="services-dscr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="large-4 medium-6 small-12 column">
+
+                            <div class="row">
+
+                                <div class="large-3 medium-2 small-2 text-center column">
+                                    <i class="icon icon-brush"></i>
+                                </div>
+
+                                <div class="large-9 medium-10 small-10 column text-left">
+
+                                    <p class="services-title">Creativity</p>
+
+                                    <p class="services-dscr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="large-4 medium-6 small-12 column">
+
+                            <div class="row">
+
+                                <div class="large-3 medium-2 small-2 text-center column">
+                                    <i class="icon icon-book-open"></i>
+                                </div>
+
+                                <div class="large-9 medium-10 small-10 column text-left">
+
+                                    <p class="services-title">SEO</p>
+
+                                    <p class="services-dscr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="large-4 medium-6 small-12 column">
+
+                            <div class="row">
+
+                                <div class="large-3 medium-2 small-2 text-center column">
+                                    <i class="icon icon-code"></i>
+                                </div>
+
+                                <div class="large-9 medium-10 small-10 column text-left">
+
+                                    <p class="services-title">CSS/HTML</p>
+
+                                    <p class="services-dscr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="large-4 medium-6 small-12 column">
+
+                            <div class="row">
+
+                                <div class="large-3 medium-2 small-2 text-center column">
+                                    <i class="icon icon-mobile"></i>
+                                </div>
+
+                                <div class="large-9 medium-10 small-10 column text-left">
+
+                                    <p class="services-title">digital</p>
+
+                                    <p class="services-dscr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="design">
+
+        <div class="expanded row">
+
+          <div class="large-12 column">
+
+              <div class="row">
+
+                  <div class="large-10 small-10 column small-centered text-center">
+
+                      <div class="block-header">
+
+                          <h2>
+
+                              <p class="title mod-coursive">For all devices</p>
+
+                              <p class="title">unique design</p>
+
+                          </h2>
+
+                          <hr class="hr">
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+              <div class="row">
+
+                  <div class="large-5 medium-5 small-8 column small-centered">
+
+                      <div class="design-img">
+
+                          <img src="i/bg-1.png" alt="" class="design-img-tablet">
+                          <img src="i/bg-2.png" alt="" class="design-img-phone">
+
+                      </div>
+
+                  </div>
 
               </div>
 
@@ -401,7 +447,7 @@
 
         <div class="row">
 
-            <div class="large-10 small-centered text-center">
+            <div class="large-10 small-10 column small-centered text-center">
 
                 <div class="block-header">
 
@@ -423,15 +469,19 @@
 
             </div>
 
-            <div class="large-12">
+        </div>
+
+        <div class="row">
+
+            <div class="large-12 medium-12 small-12 column">
 
                 <div class="row">
 
-                    <div class="large-6 column">
+                    <div class="large-6 medium-5 hide-for-small-only column">
                         <img src="i/photography.jpg" width="595" height="397" alt="">
                     </div>
 
-                    <div class="large-6 column">
+                    <div class="large-6 medium-7 small-12 column">
 
                       <ul class="accordion" data-accordion="ux46hq-accordion" data-allow-all-closed="true" role="tablist">
 
@@ -481,7 +531,7 @@
 
         <div class="row">
 
-            <div class="large-12">
+            <div class="large-12 column">
 
               <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit="secsz5-orbit" data-resize="ha0xq4-orbit" id="ha0xq4-orbit" data-events="resize">
                 <ul class="orbit-container" tabindex="0" style="height: 205px;">
@@ -492,25 +542,33 @@
 
                         <div class="row">
 
-                            <div class="large-3 column">
+                            <div class="large-10 medium-10 small-centered column">
 
-                                <div class="quotes-square">
-                                    <i class="icon icon-chat"></i>
-                                </div>
+                                <div class="row align-middle">
 
-                            </div>
+                                    <div class="large-3 hide-for-small-only column">
 
-                            <div class="large-9 column">
+                                        <div class="quotes-square">
+                                            <i class="icon icon-chat"></i>
+                                        </div>
 
-                                <div class="quotes-item">
+                                    </div>
 
-                                    <p class="quotes-item_text">
-                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                                    </p>
+                                    <div class="large-9 medium-9 small-8 small-centered column">
 
-                                    <p class="quotes-item_author">
-                                        Jon Doe
-                                    </p>
+                                      <div class="quotes-item">
+
+                                          <p class="quotes-item_text">
+                                              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                          </p>
+
+                                          <p class="quotes-item_author">
+                                              Jon Doe
+                                          </p>
+
+                                      </div>
+
+                                  </div>
 
                                 </div>
 
@@ -523,33 +581,41 @@
                   <li class="orbit-slide" data-slide="3"aria-live="polite">
                     <div class="docs-example-orbit-slide">
 
-                      <div class="row">
+                        <div class="row">
 
-                          <div class="large-3 column">
+                            <div class="large-10 medium-10 small-centered column">
 
-                              <div class="quotes-square">
-                                  <i class="icon icon-chat"></i>
-                              </div>
+                                <div class="row align-middle">
 
-                          </div>
+                                    <div class="large-3 hide-for-small-only column">
 
-                          <div class="large-9 column">
+                                        <div class="quotes-square">
+                                            <i class="icon icon-chat"></i>
+                                        </div>
 
-                              <div class="quotes-item">
+                                    </div>
 
-                                  <p class="quotes-item_text">
-                                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                                  </p>
+                                    <div class="large-9 medium-9 small-8 small-centered column">
 
-                                  <p class="quotes-item_author">
-                                      Jon Doe
-                                  </p>
+                                      <div class="quotes-item">
 
-                              </div>
+                                          <p class="quotes-item_text">
+                                              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                          </p>
 
-                          </div>
+                                          <p class="quotes-item_author">
+                                              Jon Doe
+                                          </p>
 
-                      </div>
+                                      </div>
+
+                                  </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
                   </li>
@@ -566,7 +632,7 @@
 
         <div class="row">
 
-            <div class="large-10 small-centered text-center">
+            <div class="large-10 small-10 column small-centered text-center">
 
                     <div class="block-header">
 
@@ -588,277 +654,188 @@
 
                 </div>
 
-            <div class="large-12">
+        </div>
 
-                <div class="large-4 column">
+        <div class="row">
 
-                    <div class="team-img">
+            <div class="large-12 medium-12 small-12 column">
 
-                        <img src="i/team-1.jpg" alt="" width="380" height="470">
+                <div class="row">
 
-                        <div class="team-img_hover">
+                    <div class="large-4 medium-4 small-8 small-centered column">
 
-                            <div class="team-social">
+                        <div class="team-img">
 
-                                <div class="row">
+                            <img src="i/team-1.jpg" alt="" width="380" height="470">
 
-                                    <div class="large-3 column">
+                            <div class="team-img_hover">
 
-                                        <div class="row">
+                                <div class="team-social">
 
-                                            <div class="large-12">
+                                    <div class="row">
+
+                                        <div class="large-3">
 
                                               <div class="team-social_item mod-first">
                                                   <a href="#" class="icon icon-facebook"></a>
                                               </div>
 
-                                            </div>
+                                        </div>
+
+                                        <div class="large-3">
+
+                                              <div class="team-social_item">
+                                                  <a href="#" class="icon icon-twitter"></a>
+                                              </div>
 
                                         </div>
 
-                                    </div>
+                                        <div class="large-3">
 
-                                    <div class="large-3 column">
+                                              <div class="team-social_item">
+                                                  <a href="#" class="icon icon-pinterest"></a>
+                                              </div>
 
-                                      <div class="row">
+                                        </div>
 
-                                          <div class="large-12">
-
-                                            <div class="team-social_item">
-                                                <a href="#" class="icon icon-twitter"></a>
-                                            </div>
-
-                                          </div>
-
-                                      </div>
-
-                                    </div>
-
-                                    <div class="large-3 column">
-
-                                      <div class="row">
-
-                                          <div class="large-12">
-
-                                            <div class="team-social_item">
-                                                <a href="#" class="icon icon-pinterest"></a>
-                                            </div>
-
-                                          </div>
-
-                                      </div>
-
-                                    </div>
-
-                                    <div class="large-3 column">
-
-                                        <div class="row">
-
-                                            <div class="large-12">
+                                        <div class="large-3">
 
                                               <div class="team-social_item">
                                                   <a href="#" class="icon icon-instagram"></a>
                                               </div>
 
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="team-dscr text-center">
+                            <p class="team-name">Matthew Dix</p>
+                            <p class="team-profession">Graphic Design</p>
+                        </div>
+
+                    </div>
+
+                    <div class="large-4 medium-4 small-8 small-centered column">
+
+                      <div class="team-img">
+
+                          <img src="i/team-2.jpg" alt="" width="380" height="470">
+
+                          <div class="team-img_hover">
+
+                              <div class="team-social">
+
+                                  <div class="row">
+
+                                      <div class="large-3">
+
+                                            <div class="team-social_item mod-first">
+                                                <a href="#" class="icon icon-facebook"></a>
                                             </div>
 
-                                        </div>
+                                      </div>
+
+                                      <div class="large-3">
+
+                                            <div class="team-social_item">
+                                                <a href="#" class="icon icon-twitter"></a>
+                                            </div>
 
                                       </div>
 
-                                </div>
+                                      <div class="large-3">
 
-                            </div>
+                                            <div class="team-social_item">
+                                                <a href="#" class="icon icon-pinterest"></a>
+                                            </div>
 
-                        </div>
+                                      </div>
 
-                    </div>
+                                      <div class="large-3">
 
-                    <div class="team-dscr text-center">
-                        <p class="team-name">Matthew Dix</p>
-                        <p class="team-profession">Graphic Design</p>
-                    </div>
-
-                </div>
-
-                <div class="large-4 column">
-
-                  <div class="team-img">
-
-                      <img src="i/team-2.jpg" alt="" width="380" height="470">
-
-                      <div class="team-img_hover">
-
-                        <div class="team-social">
-
-                            <div class="row">
-
-                                <div class="large-3 column">
-
-                                    <div class="row">
-
-                                        <div class="large-12">
-
-                                          <div class="team-social_item mod-first">
-                                              <a href="#" class="icon icon-facebook"></a>
-                                          </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="large-3 column">
-
-                                  <div class="row">
-
-                                      <div class="large-12">
-
-                                        <div class="team-social_item">
-                                            <a href="#" class="icon icon-twitter"></a>
-                                        </div>
+                                            <div class="team-social_item">
+                                                <a href="#" class="icon icon-instagram"></a>
+                                            </div>
 
                                       </div>
 
                                   </div>
 
-                                </div>
+                              </div>
 
-                                <div class="large-3 column">
-
-                                  <div class="row">
-
-                                      <div class="large-12">
-
-                                        <div class="team-social_item">
-                                            <a href="#" class="icon icon-pinterest"></a>
-                                        </div>
-
-                                      </div>
-
-                                  </div>
-
-                                </div>
-
-                                <div class="large-3 column">
-
-                                    <div class="row">
-
-                                        <div class="large-12">
-
-                                          <div class="team-social_item">
-                                              <a href="#" class="icon icon-instagram"></a>
-                                          </div>
-
-                                        </div>
-
-                                    </div>
-
-                                  </div>
-
-                            </div>
-
-                        </div>
+                          </div>
 
                       </div>
 
-                  </div>
+                      <div class="team-dscr text-center">
+                          <p class="team-name">Christopher Campbell</p>
+                          <p class="team-profession">Branding/UX design</p>
+                      </div>
 
-                  <div class="team-dscr text-center">
-                      <p class="team-name">Christopher Campbell</p>
-                      <p class="team-profession">Branding/UX design</p>
-                  </div>
+                    </div>
 
-                </div>
+                    <div class="large-4 medium-4 small-8 small-centered column">
 
-                <div class="large-4 column">
+                        <div class="team-img">
 
-                    <div class="team-img">
+                            <img src="i/team-3.jpg" alt="" width="380" height="470">
 
-                        <img src="i/team-3.jpg" alt="" width="380" height="470">
+                            <div class="team-img_hover">
 
-                        <div class="team-img_hover">
+                                <div class="team-social">
 
-                            <div class="team-social">
+                                    <div class="row">
 
-                                <div class="row">
-
-                                    <div class="large-3 column">
-
-                                        <div class="row">
-
-                                            <div class="large-12">
+                                        <div class="large-3">
 
                                               <div class="team-social_item mod-first">
                                                   <a href="#" class="icon icon-facebook"></a>
                                               </div>
 
-                                            </div>
+                                        </div>
+
+                                        <div class="large-3">
+
+                                              <div class="team-social_item">
+                                                  <a href="#" class="icon icon-twitter"></a>
+                                              </div>
 
                                         </div>
 
-                                    </div>
+                                        <div class="large-3">
 
-                                    <div class="large-3 column">
+                                              <div class="team-social_item">
+                                                  <a href="#" class="icon icon-pinterest"></a>
+                                              </div>
 
-                                      <div class="row">
+                                        </div>
 
-                                          <div class="large-12">
-
-                                            <div class="team-social_item">
-                                                <a href="#" class="icon icon-twitter"></a>
-                                            </div>
-
-                                          </div>
-
-                                      </div>
-
-                                    </div>
-
-                                    <div class="large-3 column">
-
-                                      <div class="row">
-
-                                          <div class="large-12">
-
-                                            <div class="team-social_item">
-                                                <a href="#" class="icon icon-pinterest"></a>
-                                            </div>
-
-                                          </div>
-
-                                      </div>
-
-                                    </div>
-
-                                    <div class="large-3 column">
-
-                                        <div class="row">
-
-                                            <div class="large-12">
+                                        <div class="large-3">
 
                                               <div class="team-social_item">
                                                   <a href="#" class="icon icon-instagram"></a>
                                               </div>
 
-                                            </div>
-
                                         </div>
 
-                                      </div>
+                                    </div>
 
                                 </div>
-
                             </div>
 
                         </div>
 
-                    </div>
+                        <div class="team-dscr text-center">
+                            <p class="team-name">Michael Fertig</p>
+                            <p class="team-profession">Developer</p>
+                        </div>
 
-                    <div class="team-dscr text-center">
-                        <p class="team-name">Michael Fertig</p>
-                        <p class="team-profession">Developer</p>
                     </div>
 
                 </div>
@@ -873,27 +850,27 @@
 
         <div class="row align-middle">
 
-            <div class="large-2 column text-center">
-                <img src="i/1.png" alt="">
+            <div class="large-2 medium-4 small-6 column text-center">
+                <img src="i/1.png" alt="" class="fade-in" data-animate="fade-in fade-out" id="myid">
             </div>
 
-            <div class="large-2 column text-center">
+            <div class="large-2 medium-4 small-6 column text-center">
                 <img src="i/2.png" alt="">
             </div>
 
-            <div class="large-2 column text-center">
+            <div class="large-2 medium-4 small-6 column text-center">
                 <img src="i/3.png" alt="">
             </div>
 
-            <div class="large-2 column text-center">
+            <div class="large-2 medium-4 small-6 column text-center">
                 <img src="i/4.png" alt="">
             </div>
 
-            <div class="large-2 column text-center">
+            <div class="large-2 medium-4 small-6 column text-center">
                 <img src="i/5.png" alt="">
             </div>
 
-            <div class="large-2 column text-center"  data-equalizer-watch="on">
+            <div class="large-2 medium-4 small-6 column text-center"  data-equalizer-watch="on">
                 <img src="i/6.png" alt="">
             </div>
 
@@ -905,7 +882,7 @@
 
         <div class="row">
 
-            <div class="large-10 small-centered text-center">
+            <div class="large-10 small-10 column small-centered text-center">
 
                 <div class="block-header">
 
@@ -930,11 +907,11 @@
 
         <div class="row expanded">
 
-            <div class="large-3">
+            <div class="large-3 medium-6 small-12 ">
 
                 <div class="row">
 
-                    <div class="large-12">
+                    <div class="large-12 medium-12 small-12">
 
                         <div class="work-img">
 
@@ -958,7 +935,7 @@
 
                 <div class="row">
 
-                    <div class="large-12">
+                    <div class="large-12 medium-12 small-12">
 
                         <div class="work-img">
 
@@ -982,17 +959,17 @@
 
             </div>
 
-            <div class="large-3">
+            <div class="large-3 medium-6 small-12 ">
 
                 <div class="row">
 
-                    <div class="large-12">
+                    <div class="large-12 medium-12 small-12">
 
                         <div class="work-img">
 
-                          <img src="i/work-3.jpg" width="480" height="390" alt="">
+                            <img src="i/work-3.jpg" width="480" height="390" alt="">
 
-                          <div class="work-img_hover">
+                            <div class="work-img_hover">
 
                               <i class="icon icon-picture"></i>
 
@@ -1010,7 +987,7 @@
 
                 <div class="row">
 
-                    <div class="large-12">
+                    <div class="large-12 medium-12 small-12">
 
                         <div class="work-img">
 
@@ -1034,11 +1011,11 @@
 
             </div>
 
-            <div class="large-3">
+            <div class="large-3 medium-6 small-12 ">
 
               <div class="row">
 
-                  <div class="large-12">
+                  <div class="large-12 medium-12 small-12">
 
                       <div class="work-img">
 
@@ -1062,11 +1039,11 @@
 
             </div>
 
-            <div class="large-3">
+            <div class="large-3 medium-6 small-12 ">
 
               <div class="row">
 
-                  <div class="large-12">
+                  <div class="large-12 medium-12 small-12">
 
                       <div class="work-img">
 
@@ -1090,7 +1067,7 @@
 
               <div class="row">
 
-                  <div class="large-12">
+                  <div class="large-12 medium-12 small-12">
 
                       <div class="work-img">
 
@@ -1122,78 +1099,101 @@
 
         <div class="row">
 
-            <div class="large-12">
+            <div class="large-12 column">
 
               <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit="secsz5-orbit" data-resize="ha0xq4-orbit" id="ha0xq4-orbit" data-events="resize">
                 <ul class="orbit-container" tabindex="0" style="height: 205px;">
                   <button class="orbit-previous orbit-button" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous Slide</span><i class="icon-left-open-big"></i></button>
                   <button class="orbit-next orbit-button" aria-label="next" tabindex="0"><span class="show-for-sr">Next Slide</span><i class="icon-right-open-big"></i></button>
-                  <li class="orbit-slide is-active" data-slide="2">
+
+                  <li class="orbit-slide" data-slide="2" aria-live="polite">
+
                     <div class="docs-example-orbit-slide">
 
-                        <div class="row align-middle">
+                        <div class="row">
 
-                            <div class="large-3 column">
+                            <div class="large-12 medium-10 small-10 small-centered column">
 
-                                <div class="testimonial-img">
-                                    <img src="i/testimonial-photo.jpg" alt="" width="326" height="232">
-                                </div>
+                              <div class="row align-middle">
 
-                            </div>
+                                  <div class="large-3 medium-5 hide-for-small-only column">
 
-                            <div class="large-9 column">
+                                      <div class="testimonial-img">
+                                          <img src="i/testimonial-photo.jpg" alt="" width="326" height="232">
+                                      </div>
 
-                                <div class="testimonial-item">
+                                  </div>
 
-                                    <p class="testimonial-item_text">
-                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                                    </p>
+                                  <div class="large-9 medium-7 small-9 small-centered column">
 
-                                    <p class="testimonial-item_author">
-                                        Joshua Earle
-                                    </p>
+                                      <div class="testimonial-item">
 
-                                </div>
+                                          <p class="testimonial-item_text">
+                                              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                          </p>
+
+                                          <p class="testimonial-item_author">
+                                              Joshua Earle
+                                          </p>
+
+                                      </div>
+
+                                  </div>
+
+                              </div>
 
                             </div>
 
                         </div>
 
                     </div>
+
                   </li>
-                  <li class="orbit-slide" data-slide="3"aria-live="polite">
+
+                  <li class="orbit-slide" data-slide="3" aria-live="polite">
+
                     <div class="docs-example-orbit-slide">
 
-                        <div class="row align-middle">
+                        <div class="row">
 
-                            <div class="large-3 column">
+                            <div class="large-12 medium-10 small-10 small-centered">
 
-                                <div class="testimonial-img">
-                                    <img src="i/testimonial-photo.jpg" alt="" width="326" height="232">
-                                </div>
+                              <div class="row align-middle">
 
-                            </div>
+                                  <div class="large-3 medium-5 hide-for-small-only column">
 
-                            <div class="large-9 column">
+                                      <div class="testimonial-img">
+                                          <img src="i/testimonial-photo.jpg" alt="" width="326" height="232">
+                                      </div>
 
-                                <div class="testimonial-item">
+                                  </div>
 
-                                    <p class="testimonial-item_text">
-                                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                                    </p>
+                                  <div class="large-9 medium-7 small-9 small-centered column">
 
-                                    <p class="testimonial-item_author">
-                                        Joshua Earle
-                                    </p>
+                                      <div class="testimonial-item">
 
-                                </div>
+                                          <p class="testimonial-item_text">
+                                              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                                          </p>
+
+                                          <p class="testimonial-item_author">
+                                              Joshua Earle
+                                          </p>
+
+                                      </div>
+
+                                  </div>
+
+                              </div>
 
                             </div>
 
                         </div>
 
                     </div>
+
                   </li>
+
                 </ul>
 
                 </div>
@@ -1208,7 +1208,7 @@
 
         <div class="row">
 
-            <div class="large-10 small-centered text-center">
+            <div class="large-10 small-10 column small-centered text-center">
 
                 <div class="block-header">
 
@@ -1226,35 +1226,43 @@
 
               </div>
 
-            <div class="large-12">
+        </div>
+
+        <div class="row">
+
+            <div class="large-12 column">
 
                 <div class="row">
 
-                    <div class="large-6 column">
+                    <div class="large-6 medium-12 small-12 small-centered column">
 
-                        <div class="row">
+                        <div class="clients-item">
 
-                            <div class="large-3 column">
+                            <div class="row">
 
-                                <img class="clients-img" src="i/clients-1.jpg" width="110" height="110" alt="">
+                                <div class="large-3 medium-4 small-4 text-center column">
 
-                            </div>
+                                    <img class="clients-img" src="i/clients-1.jpg" width="110" height="110" alt="">
 
-                            <div class="large-9 column">
+                                </div>
 
-                                <p class="clients-name">
-                                    Matthew Dix
-                                </p>
+                                <div class="large-9 medium-8 small-8 column">
 
-                                <p class="clients-profession">
-                                    Graphic Design
-                                </p>
+                                    <p class="clients-name">
+                                        Matthew Dix
+                                    </p>
 
-                                <hr class="hr mod-testimonial">
+                                    <p class="clients-profession">
+                                        Graphic Design
+                                    </p>
 
-                                <p class="clients-comment">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                                </p>
+                                    <hr class="hr mod-testimonial">
+
+                                    <p class="clients-comment">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </p>
+
+                                </div>
 
                             </div>
 
@@ -1262,31 +1270,35 @@
 
                     </div>
 
-                    <div class="large-6 column">
+                    <div class="large-6 medium-12 small-12 small-centered column">
 
-                        <div class="row">
+                        <div class="clients-item">
 
-                            <div class="large-3 column">
+                            <div class="row">
 
-                                <img class="clients-img" src="i/clients-2.jpg" width="110" height="110" alt="">
+                                <div class="large-3 medium-4 small-4 text-center column">
 
-                            </div>
+                                    <img class="clients-img" src="i/clients-2.jpg" width="110" height="110" alt="">
 
-                            <div class="large-9 column">
+                                </div>
 
-                                <p class="clients-name">
-                                    Nick Karvounis
-                                </p>
+                                <div class="large-9 medium-8 small-8 column">
 
-                                <p class="clients-profession">
-                                    Graphic Design
-                                </p>
+                                    <p class="clients-name">
+                                        Nick Karvounis
+                                    </p>
 
-                                <hr class="hr mod-testimonial">
+                                    <p class="clients-profession">
+                                        Graphic Design
+                                    </p>
 
-                                <p class="clients-comment">
-                                    Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                </p>
+                                    <hr class="hr mod-testimonial">
+
+                                    <p class="clients-comment">
+                                        Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </p>
+
+                                </div>
 
                             </div>
 
@@ -1298,63 +1310,71 @@
 
                 <div class="row">
 
-                    <div class="large-6 column">
+                    <div class="large-6 medium-12 small-12 small-centered column">
 
-                        <div class="row">
+                      <div class="clients-item">
 
-                            <div class="large-3 column">
+                          <div class="row">
 
-                                <img class="clients-img" src="i/clients-3.jpg" width="110" height="110" alt="">
+                              <div class="large-3 medium-4 small-4 text-center column">
 
-                            </div>
+                                  <img class="clients-img" src="i/clients-3.jpg" width="110" height="110" alt="">
 
-                            <div class="large-9 column">
+                              </div>
 
-                                <p class="clients-name">
-                                    Jaelynn Castillo
-                                </p>
+                              <div class="large-9 medium-8 small-8 column">
 
-                                <p class="clients-profession">
-                                    Graphic Design
-                                </p>
+                                  <p class="clients-name">
+                                      Jaelynn Castillo
+                                  </p>
 
-                                <hr class="hr mod-testimonial">
+                                  <p class="clients-profession">
+                                      Graphic Design
+                                  </p>
 
-                                <p class="clients-comment">
-                                    Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                </p>
+                                  <hr class="hr mod-testimonial">
 
-                            </div>
+                                  <p class="clients-comment">
+                                      Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                  </p>
 
-                        </div>
+                              </div>
+
+                          </div>
+
+                      </div>
 
                     </div>
 
-                    <div class="large-6 column">
+                    <div class="large-6 medium-12 small-12 small-centered column">
 
-                        <div class="row">
+                        <div class="clients-item">
 
-                            <div class="large-3 column">
+                            <div class="row">
 
-                                <img class="clients-img" src="i/clients-4.jpg" width="110" height="110" alt="">
+                                <div class="large-3 medium-4 small-4 text-center column">
 
-                            </div>
+                                    <img class="clients-img" src="i/clients-4.jpg" width="110" height="110" alt="">
 
-                            <div class="large-9 column">
+                                </div>
 
-                                <p class="clients-name">
-                                    Mike Petrucci
-                                </p>
+                                <div class="large-9 medium-8 small-8 column">
 
-                                <p class="clients-profession">
-                                    Graphic Design
-                                </p>
+                                    <p class="clients-name">
+                                        Mike Petrucci
+                                    </p>
 
-                                <hr class="hr mod-testimonial">
+                                    <p class="clients-profession">
+                                        Graphic Design
+                                    </p>
 
-                                <p class="clients-comment">
-                                    Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-                                </p>
+                                    <hr class="hr mod-testimonial">
+
+                                    <p class="clients-comment">
+                                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                    </p>
+
+                                </div>
 
                             </div>
 
@@ -1368,13 +1388,15 @@
 
         </div>
 
+        </div>
+
     </div>
 
     <div class="blog">
 
         <div class="row">
 
-            <div class="large-10 small-centered text-center">
+            <div class="large-10 small-10 column small-centered text-center">
 
                 <div class="block-header">
 
@@ -1392,11 +1414,15 @@
 
               </div>
 
-            <div class="large-12">
+        </div>
+
+        <div class="row">
+
+            <div class="large-12 column">
 
                 <div class="row">
 
-                    <div class="large-4 column">
+                    <div class="large-4 medium-7 small-11 small-centered medium-text-center column">
 
                         <div class="blog-img">
 
@@ -1438,7 +1464,7 @@
                         </div>
                     </div>
 
-                    <div class="large-4 column">
+                    <div class="large-4 medium-7 small-11 small-centered medium-text-center column">
 
                         <div class="blog-img">
 
@@ -1480,7 +1506,7 @@
                         </div>
                     </div>
 
-                    <div class="large-4 column">
+                    <div class="large-4 medium-7 small-11 small-centered medium-text-center column">
 
                         <div class="blog-img">
 
@@ -1532,20 +1558,7 @@
 
     <div class="map">
 
-      <ul class="vertical menu" data-drilldown>
-        <li>
-          <a href="#Item-1">
-              <div class="map-wr"></div>
-          </a>
-          <ul class="vertical menu">
-            <li><a href="#Item-1A">
-              <iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfQfGQUuwEmsRqrWN0S05ToQ&key=AIzaSyCdPELJK6VvcyvzL1pb1a9N7LYgdqGrI1Y" allowfullscreen></iframe>
-
-            </a></li>
-            <!-- ... -->
-          </ul>
-        </li>
-      </ul>
+        <iframe width="100%" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfQfGQUuwEmsRqrWN0S05ToQ&key=AIzaSyCdPELJK6VvcyvzL1pb1a9N7LYgdqGrI1Y" allowfullscreen></iframe>
 
     </div>
 
@@ -1553,16 +1566,228 @@
 
         <div class="row">
 
-            <div class="large-5">
-                123
+            <div class="large-12 medium-12 small-12 text-center">
+
+                <span>2016 MoJo free PSD template by <span class="footer-highlighted">Laaqiq</span></span>
             </div>
 
-            <div class="large-7">
-                456789
-            </div>
         </div>
 
     </div>
+
+    <!-- <div class="footer">
+
+        <div class="row">
+
+            <div class="large-5 column">
+
+                <div class="row">
+
+                    <div class="large-11 column">
+
+                        <div class="footer-logo">
+                            MoJo
+                        </div>
+
+                        <div class="footer-dscr">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="large-11 column">
+
+                        <div class="div footer-followers">
+
+                            <span class="footer-followers_value">
+                                15k
+                            </span>
+
+                            <span>followers</span>
+
+                        </div>
+
+                        <div class="footer-social">
+
+                            <span>Follow Us:</span>
+
+                            <a href=""><i class="icon icon-facebook"></i></a>
+                            <a href=""><i class="icon icon-twitter"></i></a>
+                            <a href=""><i class="icon icon-instagram"></i></a>
+                            <a href=""><i class="icon icon-pinterest"></i></a>
+                            <a href=""><i class="icon icon-gplus"></i></a>
+                            <a href=""><i class="icon icon-youtube-play"></i></a>
+                            <a href=""><i class="icon icon-dribbble"></i></a>
+                            <a href=""><i class="icon icon-tumblr"></i></a>
+
+                        </div>
+
+                        <div class="footer-subscribe input-group">
+
+                            <input class="input-group-field" type="text" placeholder="Your Email...">
+
+                            <div class="input-group-button">
+
+                                <input type="submit" class="button" value="Subscribe">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="large-3 column">
+
+                <div class="row">
+
+                    <div class="large-12 small-centerd">
+
+                      <div class="footer-title">
+                          blogs
+                      </div>
+
+                      <div class="footer-blog">
+
+                          <div class="footer-blog_item">
+
+                              <div class="row align-middle">
+
+                                  <div class="large-5">
+
+                                      <img src="i/footer-blog-2.jpg" alt="" width="120" height="80">
+
+                                  </div>
+
+                                  <div class="large-7">
+
+                                      <p class="footer-blog_name">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                                      </p>
+
+                                      <p class="footer-blog_date">
+                                          Jan 9, 2016
+                                      </p>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="footer-blog_item">
+
+                              <div class="row align-middle">
+
+                                  <div class="large-5">
+
+                                      <img src="i/footer-blog-2.jpg" alt="" width="120" height="80">
+
+                                  </div>
+
+                                  <div class="large-7">
+
+                                      <p class="footer-blog_name">
+                                          Consectetur adipiscing elit, sed do eiusmod tempor
+                                      </p>
+
+                                      <p class="footer-blog_date">
+                                          Jan 9, 2016
+                                      </p>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                          <div class="footer-blog_item">
+
+                              <div class="row align-middle">
+
+                                  <div class="large-5">
+
+                                      <img src="i/footer-blog-2.jpg" alt="" width="120" height="80">
+
+                                  </div>
+
+                                  <div class="large-7">
+
+                                      <p class="footer-blog_name">
+                                          sed do eiusmod tempor incididunt ut labore
+                                      </p>
+
+                                      <p class="footer-blog_date">
+                                          Jan 9, 2016
+                                      </p>
+
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="large-4 column">
+
+                <div class="row">
+
+<div class="larger-12 small-centered">
+
+                          <div class="footer-title">
+                              instagram
+                          </div>
+
+                          <div class="footer-instagram">
+
+                              <div class="row">
+
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+
+                              </div>
+
+                              <div class="row">
+
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+
+                              </div>
+
+                              <div class="row">
+
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+                                  <div class="large-4 text-center"><img src="i/insta-1.jpg" width="88" height="88" alt=""></div>
+
+                              </div>
+
+                          </div>
+</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
 
   </body>
 

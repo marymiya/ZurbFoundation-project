@@ -4,8 +4,20 @@
         font 600 150px $font-montserrat
         text-transform uppercase
 
+        @media $tablet
+            font-size 50px
+
+        @media $phone
+            font-size 30px
+
         &.mod-coursive
             font 400 52px $font-kaushanscript
+
+            @media $tablet-only
+                font-size 32px
+
+            @media $phone
+                font-size 22px
 
     &-dscr
         font 400 15px $font-roboto

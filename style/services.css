@@ -2,8 +2,13 @@
   border-top: 1px;
 }
 .services .icon {
-  color: $color-facts;
+  color: $color-turquoise;
   font-size: 35px;
+}
+@media $phone {
+  .services .icon {
+    font-size: 30px;
+  }
 }
 .services-title {
   font: 400 14px $font-montserrat;

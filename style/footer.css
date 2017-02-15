@@ -1,0 +1,10 @@
+.footer {
+  margin-top: 70px;
+  padding: 20px;
+  font: 400 12px $font-montserrat;
+  color: $color-black-text;
+  border-top: 1px solid $color-blog-info;
+}
+.footer-highlighted {
+  color: $color-red;
+}

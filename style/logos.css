@@ -3,3 +3,31 @@
   padding: 60px 0;
   background-color: $color-quotes-bg;
 }
+@media $tablet {
+  .logos {
+    padding: 0;
+  }
+}
+@media $phone {
+  .logos {
+    padding: 0;
+  }
+}
+.logos img {
+  cursor: pointer;
+}
+.logos img:hover {
+  position: relative;
+  left: -10px;
+  top: -10px;
+}
+@media $tablet {
+  .logos img {
+    margin: 15px 0;
+  }
+}
+@media $phone {
+  .logos img {
+    margin: 15px 0;
+  }
+}

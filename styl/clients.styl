@@ -3,10 +3,29 @@
     background-size cover
     padding-bottom 130px
 
+    @media $tablet
+        padding 80px
+
+    @media $phone
+        padding-bottom 30px
+
+    &-item
+
+        @media $tablet
+            margin-top 20px
+
     &-img
         width 110px
         height 110px
         border-radius 55px
+
+        @media $tablet
+            width auto
+            height auto
+
+        @media $phone
+            width auto
+            height auto
 
     &-name
         font 400 14px $font-montserrat

@@ -3,17 +3,34 @@
   margin-top: 120px;
   padding: 70px 0;
 }
+@media $phone {
+  .quotes {
+    padding: 25px 0;
+  }
+}
 .quotes-square {
   width: 150px;
   height: 150px;
-  border: 3px solid $color-facts;
-  float: right;
+  border: 3px solid $color-turquoise;
+  margin: auto;
   padding: 25px;
+}
+@media $tablet {
+  .quotes-square {
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+  }
 }
 .quotes-square .icon {
   font-size: 60px;
-  color: $color-facts;
+  color: $color-turquoise;
   display: block;
+}
+@media $tablet {
+  .quotes-square .icon {
+    font-size: 25px;
+  }
 }
 .quotes-item_text {
   font: 300 24px $font-roboto;
@@ -22,11 +39,26 @@
   line-height: 1.5;
   margin-bottom: 10px;
 }
+@media $tablet {
+  .quotes-item_text {
+    font-size: 20px;
+  }
+}
+@media $phone {
+  .quotes-item_text {
+    font-size: 15px;
+  }
+}
 .quotes-item_author {
   font: 400 24px $font-kaushanscript;
   color: $color-black-text;
   vertical-align: middle;
   margin-bottom: 0;
+}
+@media $phone {
+  .quotes-item_author {
+    font-size: 18px;
+  }
 }
 .quotes-item_author:before {
   content: '';

@@ -3,17 +3,28 @@
     margin-top 120px
     padding 70px 0
 
+    @media $phone
+        padding 25px 0
+
     &-square
         width 150px
         height 150px
-        border 3px solid $color-facts
-        float right
+        border 3px solid $color-turquoise
+        margin auto
         padding 25px
+
+        @media $tablet
+            width 75px
+            height 75px
+            padding 15px
 
         .icon
             font-size 60px
-            color $color-facts
+            color $color-turquoise
             display block
+
+            @media $tablet
+                font-size 25px
 
     &-item
 
@@ -24,11 +35,21 @@
             line-height 1.5
             margin-bottom 10px
 
+            @media $tablet
+                font-size 20px
+
+            @media $phone
+                font-size 15px
+
         &_author
               font 400 24px $font-kaushanscript
               color $color-black-text
               vertical-align middle
               margin-bottom 0
+
+
+              @media $phone
+                  font-size 18px
 
               &:before
                   content ''

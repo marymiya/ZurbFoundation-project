@@ -7,6 +7,7 @@
 @require "facts.styl"
 @require "services.styl"
 @require "design.styl"
+@require "wedo.styl"
 @require "quotes.styl"
 @require "team.styl"
 @require "logos.styl"
@@ -15,6 +16,7 @@
 @require "clients.styl"
 @require "blog.styl"
 @require "map.styl"
+@require "footer.styl"
 
 .video
     position: absolute;
@@ -27,3 +29,6 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+
+    @media $phone
+        display none

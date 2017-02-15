@@ -1,13 +1,38 @@
 .block-header {
   margin-top: 110px;
 }
+@media $tablet {
+  .block-header {
+    margin-top: 80px;
+  }
+}
+@media $phone {
+  .block-header {
+    margin-top: 50px;
+  }
+}
 .block-header .title {
   font: 600 34px $font-montserrat;
   text-transform: uppercase;
 }
+@media $tablet {
+  .block-header .title {
+    font-size: 30px;
+  }
+}
+@media $phone {
+  .block-header .title {
+    font-size: 25px;
+  }
+}
 .block-header .title.mod-coursive {
   font: 400 24px $font-kaushanscript;
   text-transform: initial;
+}
+@media $phone {
+  .block-header .title.mod-coursive {
+    font-size: 22px;
+  }
 }
 .block-header .hr {
   width: 60px;
@@ -15,6 +40,16 @@
   background-color: $color-red;
   border: 0;
   margin: 45px auto;
+}
+@media $tablet {
+  .block-header .hr {
+    margin: 35px auto;
+  }
+}
+@media $phone {
+  .block-header .hr {
+    margin: 25px auto;
+  }
 }
 .block-header .dscr {
   font: 400 15px $font-roboto;

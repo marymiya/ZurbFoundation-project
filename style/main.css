@@ -1,6 +1,13 @@
 .main {
-  min-height: 989px;
+  min-height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+@media $tablet {
+  .main {
+    background: url("../i/video-bg.jpg");
+    background-size: cover;
+  }
 }
 .main::before {
   content: "";

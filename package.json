@@ -14,5 +14,8 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-stylus": "^2.6.0",
     "gulp-watch": "^4.3.10"
+  },
+  "dependencies": {
+    "motion-ui": "^1.2.2"
   }
 }

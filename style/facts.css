@@ -1,18 +1,38 @@
 .facts {
-  background-color: $color-facts;
+  background-color: $color-turquoise;
   color: $color-white;
 }
 .facts-wr {
   padding: 75px 0;
 }
+@media $tablet {
+  .facts-wr {
+    padding: 35px 0;
+  }
+}
+@media $phone {
+  .facts-wr {
+    padding: 25px 0;
+  }
+}
 .facts .column {
-  border-right: 1px solid $color-facts-border;
+  border-right: 1px solid $color-turquoise-border;
 }
 .facts .column:first-child {
-  border-left: 1px solid $color-facts-border;
+  border-left: 1px solid $color-turquoise-border;
 }
 .facts-num {
   font: 700 72px $font-montserrat;
+}
+@media $tablet {
+  .facts-num {
+    font-size: 48px;
+  }
+}
+@media $phone {
+  .facts-num {
+    font-size: 32px;
+  }
 }
 .facts-dscr {
   font: 400 14px $font-montserrat;

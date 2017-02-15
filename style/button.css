@@ -6,3 +6,13 @@
   font: 600 12px $font-montserrat;
   margin-top: 50px;
 }
+@media $tablet {
+  .orbit-button {
+    padding: 10px;
+  }
+}
+@media $phone {
+  .orbit-button {
+    padding: 10px;
+  }
+}

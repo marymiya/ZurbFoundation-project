@@ -1,13 +1,28 @@
 .block-header
     margin-top 110px
-    
+
+    @media $tablet
+          margin-top 80px
+
+    @media $phone
+        margin-top 50px
+
     .title
         font 600 34px $font-montserrat
         text-transform uppercase
 
+        @media $tablet
+            font-size 30px
+
+        @media $phone
+            font-size 25px
+
         &.mod-coursive
             font 400 24px $font-kaushanscript
             text-transform initial
+
+            @media $phone
+                font-size 22px
 
     .hr
         width 60px
@@ -15,6 +30,12 @@
         background-color $color-red
         border 0
         margin 45px auto
+
+        @media $tablet
+              margin 35px auto
+
+        @media $phone
+            margin 25px auto
 
     .dscr
         font 400 15px $font-roboto

@@ -3,10 +3,37 @@
   background-size: cover;
   padding-bottom: 130px;
 }
+@media $tablet {
+  .clients {
+    padding: 80px;
+  }
+}
+@media $phone {
+  .clients {
+    padding-bottom: 30px;
+  }
+}
+@media $tablet {
+  .clients-item {
+    margin-top: 20px;
+  }
+}
 .clients-img {
   width: 110px;
   height: 110px;
   border-radius: 55px;
+}
+@media $tablet {
+  .clients-img {
+    width: auto;
+    height: auto;
+  }
+}
+@media $phone {
+  .clients-img {
+    width: auto;
+    height: auto;
+  }
 }
 .clients-name {
   font: 400 14px $font-montserrat;

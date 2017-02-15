@@ -6,7 +6,13 @@
   height: 213px;
   border-radius: 106px;
   overflow: hidden;
-  float: right;
+  margin: auto;
+}
+@media $tablet {
+  .testimonial-img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .testimonial-item_text {
   font: 300 24px $font-roboto;
@@ -15,11 +21,31 @@
   line-height: 1.5;
   margin-bottom: 10px;
 }
+@media $tablet {
+  .testimonial-item_text {
+    font-size: 19px;
+  }
+}
+@media $phone {
+  .testimonial-item_text {
+    font-size: 15px;
+  }
+}
 .testimonial-item_author {
   font: 400 24px $font-kaushanscript;
   color: $color-black-text;
   vertical-align: middle;
   margin-bottom: 0;
+}
+@media $tablet {
+  .testimonial-item_author {
+    font-size: 20px;
+  }
+}
+@media $phone {
+  .testimonial-item_author {
+    font-size: 16px;
+  }
 }
 .testimonial-item_author:before {
   content: '';
