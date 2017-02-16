@@ -1,0 +1,25 @@
+.top-bar {
+  background: $color-corall;
+  padding: 0;
+}
+.top-bar-title {
+  margin: 0;
+}
+.top-bar .menu {
+  background: none;
+}
+.top-bar .menu a {
+  font: 700 14px $font-montserrat;
+  color: $color-white;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+@media $phone {
+  .top-bar .menu a {
+    padding: 8px;
+  }
+}
+.top-bar .menu a:hover {
+  color: $color-yellow;
+  text-decoration: underline;
+}

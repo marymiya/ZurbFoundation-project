@@ -1,8 +1,6 @@
 .team
 
     &-img
-        width 380px
-        height 470px
         position relative
         mix-transition()
 
@@ -11,15 +9,10 @@
             height auto
             margin-top 20px
 
-        @media $phone
-            width 100%
-            height auto
-            margin-top 20px
-
         &_hover
             opacity 0
-            width 380px
-            height 470px
+            width 100%
+            height 100%
             background linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow)
             position absolute
             left -10px
@@ -33,10 +26,6 @@
             mix-transition()
 
             @media $tablet
-                width 100%
-                height 100%
-
-            @media $phone
                 width 100%
                 height 100%
 
@@ -65,25 +54,22 @@
         @media $tablet
             width auto
 
-        @media $phone
-            width 160px
-
         &_item
-            border-left 1px solid $color-social-hover
-            background $color-social
+            border-left 1px solid $color-corall
+            background $color-yellow
             mix-transition()
             padding 10px 0
 
             .icon
                 font-size 27px
-                color $color-social-hover
+                color $color-corall
 
             &:hover
-                border-left 1px solid $color-social
-                background $color-social-hover
+                border-left 1px solid $color-yellow
+                background $color-corall
 
                 .icon
-                    color $color-social
+                    color $color-yellow
 
             &.mod-first
                 border-left 0

@@ -21,12 +21,6 @@
     height: auto;
   }
 }
-@media $phone {
-  .story-item_img {
-    width: 100%;
-    height: auto;
-  }
-}
 .story-item_hover {
   opacity: 0;
   width: 100%;

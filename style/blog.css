@@ -1,5 +1,9 @@
 .blog-img {
   position: relative;
+  cursor: pointer;
+}
+.blog-img img {
+  width: 100%;
 }
 .blog-date {
   position: absolute;
@@ -31,8 +35,8 @@
   margin: 20px 0 0;
 }
 .blog-info {
-  margin-top: 25px;
-  padding: 20px 0 30px;
+  margin-top: 10px;
+  padding: 5px 0 30px;
   border-top: 1px solid $color-blog-info;
 }
 .blog-info_item {

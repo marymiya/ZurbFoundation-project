@@ -12,6 +12,7 @@
 
         &.mod-coursive
             font 400 52px $font-kaushanscript
+            margin-top 120px
 
             @media $tablet-only
                 font-size 32px
@@ -22,3 +23,18 @@
     &-dscr
         font 400 15px $font-roboto
         color color-gray-text
+
+.menu-icon
+
+    &.dark
+
+      &:after
+          background-color $color-white
+          box-shadow 0 7px 0 $color-white, 0 14px 0 $color-white
+          transition 0.3s
+
+      &:hover
+
+          &:after
+              background-color $color-yellow
+              box-shadow 0 7px 0 $color-yellow, 0 14px 0 $color-yellow

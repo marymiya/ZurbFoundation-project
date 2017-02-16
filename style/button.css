@@ -11,8 +11,3 @@
     padding: 10px;
   }
 }
-@media $phone {
-  .orbit-button {
-    padding: 10px;
-  }
-}
