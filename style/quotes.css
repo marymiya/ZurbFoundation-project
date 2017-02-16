@@ -1,7 +1,7 @@
 .quotes {
-  background-color: $color-quotes-bg;
   margin-top: 120px;
   padding: 70px 0;
+  background-color: $color-quotes-bg;
 }
 @media $phone {
   .quotes {
@@ -11,9 +11,9 @@
 .quotes-square {
   width: 150px;
   height: 150px;
-  border: 3px solid $color-turquoise;
   margin: auto;
   padding: 25px;
+  border: 3px solid $color-turquoise;
 }
 @media $tablet {
   .quotes-square {
@@ -23,9 +23,9 @@
   }
 }
 .quotes-square .icon {
+  display: block;
   font-size: 60px;
   color: $color-turquoise;
-  display: block;
 }
 @media $tablet {
   .quotes-square .icon {
@@ -33,11 +33,11 @@
   }
 }
 .quotes-item_text {
+  margin-bottom: 10px;
   font: 300 24px $font-roboto;
   font-style: italic;
-  color: $color-gray-text;
   line-height: 1.5;
-  margin-bottom: 10px;
+  color: $color-gray-text;
 }
 @media $tablet {
   .quotes-item_text {
@@ -50,10 +50,10 @@
   }
 }
 .quotes-item_author {
-  font: 400 24px $font-kaushanscript;
-  color: $color-black-text;
-  vertical-align: middle;
   margin-bottom: 0;
+  font: 400 24px $font-kaushanscript;
+  vertical-align: middle;
+  color: $color-black-text;
 }
 @media $phone {
   .quotes-item_author {
@@ -61,23 +61,22 @@
   }
 }
 .quotes-item_author:before {
-  content: '';
+  display: inline-block;
   width: 60px;
   height: 3px;
+  margin-right: 5px;
+  content: '';
+  vertical-align: middle;
   color: $color-red;
   background-color: $color-red;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
 }
 .orbit-container {
   outline: none;
 }
 .orbit-button {
-  color: $color-arrows;
   font-size: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  color: $color-arrows;
 }
 .orbit-button:hover,
 .orbit-button:focus,

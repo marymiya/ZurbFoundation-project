@@ -2,6 +2,7 @@
 @require "button.styl"
 @require "block.styl"
 @require "story.styl"
+@require "video.styl"
 @require "main.styl";
 @require "block-header.styl"
 @require "facts.styl"
@@ -18,18 +19,3 @@
 @require "map.styl"
 @require "footer.styl"
 @require "top-bar.styl"
-
-.video
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-
-    @media $phone
-        display none

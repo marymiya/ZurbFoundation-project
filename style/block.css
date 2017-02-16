@@ -13,8 +13,8 @@
   }
 }
 .block-title.mod-coursive {
-  font: 400 52px $font-kaushanscript;
   margin-top: 120px;
+  font: 400 52px $font-kaushanscript;
 }
 @media $tablet-only {
   .block-title.mod-coursive {
@@ -33,7 +33,6 @@
 .menu-icon.dark:after {
   background-color: $color-white;
   box-shadow: 0 7px 0 $color-white, 0 14px 0 $color-white;
-  transition: 0.3s;
 }
 .menu-icon.dark:hover:after {
   background-color: $color-yellow;

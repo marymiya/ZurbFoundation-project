@@ -1,8 +1,8 @@
 .wedo .accordion-title {
-  font: 700 14px $font-montserrat;
-  color: $color-black-text;
-  text-transform: uppercase;
   padding: 0.75rem 1rem;
+  font: 700 14px $font-montserrat;
+  text-transform: uppercase;
+  color: $color-black-text;
 }
 .wedo .accordion-title:before {
   font-size: 18px;
@@ -11,12 +11,12 @@
 .wedo .accordion-content {
   font: 300 15px $font-roboto;
   font-style: italic;
-  color: $color-gray-text;
   line-height: 1.5;
+  color: $color-gray-text;
 }
 .wedo .accordion .icon {
-  font-size: 23px;
-  color: $color-turquoise;
   margin-right: 20px;
+  font-size: 23px;
   vertical-align: middle;
+  color: $color-turquoise;
 }

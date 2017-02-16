@@ -1,10 +1,14 @@
 .button.hollow {
   width: 160px;
-  border: 3px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  font: 600 12px $font-montserrat;
   margin-top: 50px;
+  font: 600 12px $font-montserrat;
+  text-transform: uppercase;
+  color: #fff;
+  border: 3px solid #fff;
+}
+.button.hollow:hover {
+  color: $color-yellow;
+  border-color: $color-yellow;
 }
 @media $tablet {
   .orbit-button {

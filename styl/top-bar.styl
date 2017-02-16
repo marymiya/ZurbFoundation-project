@@ -1,18 +1,23 @@
 .top-bar
-  background $color-corall
   padding 0
+  background $color-corall
 
   &-title
       margin 0
+      color $color-white
+      mix-transition()
+
+      &:hover
+          color $color-yellow
 
   .menu
       background none
 
       a
         font 700 14px $font-montserrat
-        color $color-white
-        transition 0.3s
         text-transform uppercase
+        color $color-white
+        mix-transition()
 
         @media $phone
             padding 8px

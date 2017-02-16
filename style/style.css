@@ -1,10 +1,14 @@
 .button.hollow {
   width: 160px;
-  border: 3px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  font: 600 12px montserrat, arial, sans-serif;
   margin-top: 50px;
+  font: 600 12px montserrat, arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  border: 3px solid #fff;
+}
+.button.hollow:hover {
+  color: #fce38a;
+  border-color: #fce38a;
 }
 @media screen and (max-width: 63.9375em) {
   .orbit-button {
@@ -26,8 +30,8 @@
   }
 }
 .block-title.mod-coursive {
-  font: 400 52px "kaushan script", arial, sans-serif;
   margin-top: 120px;
+  font: 400 52px "kaushan script", arial, sans-serif;
 }
 @media $tablet-only {
   .block-title.mod-coursive {
@@ -46,7 +50,7 @@
 .menu-icon.dark:after {
   background-color: #fff;
   box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
-  transition: 0.3s;
+  transition: ease 0.5s all;
 }
 .menu-icon.dark:hover:after {
   background-color: #fce38a;
@@ -64,11 +68,10 @@
   }
 }
 .story-item_img {
-  margin: auto;
+  overflow: wrap;
   width: 380px;
   height: 259px;
-  transition: ease 0.5s all;
-  overflow: wrap;
+  margin: auto;
   transition: ease 0.5s all;
 }
 @media screen and (max-width: 63.9375em) {
@@ -78,28 +81,28 @@
   }
 }
 .story-item_hover {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   position: absolute;
-  left: -10px;
   top: -10px;
+  left: -10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
+  text-align: center;
+  opacity: 0;
   color: #fff;
+  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   transition: ease 0.5s all;
 }
 .story-item_hover .icon {
   font-size: 20px;
 }
 .story-item_hover p {
+  margin-top: 10px;
   font: 600 18px montserrat, arial, sans-serif;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 .story-item:hover {
   background-color: #95e1d3;
@@ -112,10 +115,25 @@
   top: -10px;
   left: -10px;
 }
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 39.9375em) {
+  .video {
+    display: none;
+  }
+}
 .main {
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
 }
 @media screen and (max-width: 63.9375em) {
   .main {
@@ -124,27 +142,27 @@
   }
 }
 .main::before {
-  content: "";
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  content: "";
   background: linear-gradient(to bottom, rgba(252,227,138,0.7), rgba(243,129,129,0.7));
-  z-index: 1;
 }
 .main-content {
   position: relative;
-  color: #fff;
-  font-size: 30px;
   z-index: 3;
+  font-size: 30px;
+  color: #fff;
 }
 .main-hr {
   width: 60px;
   height: 3px;
-  background-color: #fff;
-  border: 0;
   margin: 0 auto;
+  border: 0;
+  background-color: #fff;
 }
 .block-header {
   margin-top: 110px;
@@ -185,9 +203,9 @@
 .block-header .hr {
   width: 60px;
   height: 3px;
-  background-color: #f38181;
-  border: 0;
   margin: 45px auto;
+  border: 0;
+  background-color: #f38181;
 }
 @media screen and (max-width: 63.9375em) {
   .block-header .hr {
@@ -204,8 +222,8 @@
   color: #999;
 }
 .facts {
-  background-color: #95e1d3;
   color: #fff;
+  background-color: #95e1d3;
 }
 .facts-wr {
   padding: 75px 0;
@@ -240,15 +258,15 @@
   }
 }
 .facts-dscr {
-  font: 400 14px montserrat, arial, sans-serif;
   margin: 0;
+  font: 400 14px montserrat, arial, sans-serif;
 }
 .services-line {
   border-top: 1px;
 }
 .services .icon {
-  color: #95e1d3;
   font-size: 35px;
+  color: #95e1d3;
 }
 @media screen and (max-width: 39.9375em) {
   .services .icon {
@@ -257,18 +275,18 @@
 }
 .services-title {
   font: 400 14px montserrat, arial, sans-serif;
-  color: #333;
   text-transform: uppercase;
+  color: #333;
 }
 .services-dscr {
   font: 400 15px roboto, arial, sans-serif;
-  color: #999;
   line-height: 1.5;
+  color: #999;
 }
 .design {
+  position: relative;
   background: linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../i/design-bg.jpg");
   background-size: cover;
-  position: relative;
 }
 .design-img {
   position: relative;
@@ -296,17 +314,17 @@
   overflow: overlay;
 }
 .accordion-title:before {
-  content: '\e80b';
   font-family: "fontello";
+  content: '\e80b';
 }
 .is-active .accordion-title:before {
   content: '\e80c';
 }
 .wedo .accordion-title {
-  font: 700 14px montserrat, arial, sans-serif;
-  color: #333;
-  text-transform: uppercase;
   padding: 0.75rem 1rem;
+  font: 700 14px montserrat, arial, sans-serif;
+  text-transform: uppercase;
+  color: #333;
 }
 .wedo .accordion-title:before {
   font-size: 18px;
@@ -315,19 +333,19 @@
 .wedo .accordion-content {
   font: 300 15px roboto, arial, sans-serif;
   font-style: italic;
-  color: #999;
   line-height: 1.5;
+  color: #999;
 }
 .wedo .accordion .icon {
-  font-size: 23px;
-  color: #95e1d3;
   margin-right: 20px;
+  font-size: 23px;
   vertical-align: middle;
+  color: #95e1d3;
 }
 .quotes {
-  background-color: #f8f8f8;
   margin-top: 120px;
   padding: 70px 0;
+  background-color: #f8f8f8;
 }
 @media screen and (max-width: 39.9375em) {
   .quotes {
@@ -337,9 +355,9 @@
 .quotes-square {
   width: 150px;
   height: 150px;
-  border: 3px solid #95e1d3;
   margin: auto;
   padding: 25px;
+  border: 3px solid #95e1d3;
 }
 @media screen and (max-width: 63.9375em) {
   .quotes-square {
@@ -349,9 +367,9 @@
   }
 }
 .quotes-square .icon {
+  display: block;
   font-size: 60px;
   color: #95e1d3;
-  display: block;
 }
 @media screen and (max-width: 63.9375em) {
   .quotes-square .icon {
@@ -359,11 +377,11 @@
   }
 }
 .quotes-item_text {
+  margin-bottom: 10px;
   font: 300 24px roboto, arial, sans-serif;
   font-style: italic;
-  color: #999;
   line-height: 1.5;
-  margin-bottom: 10px;
+  color: #999;
 }
 @media screen and (max-width: 63.9375em) {
   .quotes-item_text {
@@ -376,10 +394,10 @@
   }
 }
 .quotes-item_author {
-  font: 400 24px "kaushan script", arial, sans-serif;
-  color: #333;
-  vertical-align: middle;
   margin-bottom: 0;
+  font: 400 24px "kaushan script", arial, sans-serif;
+  vertical-align: middle;
+  color: #333;
 }
 @media screen and (max-width: 39.9375em) {
   .quotes-item_author {
@@ -387,23 +405,23 @@
   }
 }
 .quotes-item_author:before {
-  content: '';
+  display: inline-block;
   width: 60px;
   height: 3px;
+  margin-right: 5px;
+  content: '';
+  vertical-align: middle;
   color: #f38181;
   background-color: #f38181;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
 }
 .orbit-container {
   outline: none;
 }
 .orbit-button {
-  color: #ccc;
   font-size: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  color: #ccc;
+  transition: ease 0.5s all;
 }
 .orbit-button:hover,
 .orbit-button:focus,
@@ -425,19 +443,19 @@
   }
 }
 .team-img_hover {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   position: absolute;
-  left: -10px;
   top: -10px;
+  left: -10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
+  text-align: center;
+  opacity: 0;
   color: #fff;
+  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   transition: ease 0.5s all;
 }
 @media screen and (max-width: 63.9375em) {
@@ -474,10 +492,10 @@
   }
 }
 .team-social_item {
+  padding: 10px 0;
   border-left: 1px solid #f38181;
   background: #fce38a;
   transition: ease 0.5s all;
-  padding: 10px 0;
 }
 .team-social_item .icon {
   font-size: 27px;
@@ -502,15 +520,15 @@
   }
 }
 .team-name {
+  margin: 0;
   font: 400 14px montserrat, arial, sans-serif;
   color: #333;
-  margin: 0;
 }
 .team-profession {
+  margin: 15px 0 0;
   font: 400 14px roboto, arial, sans-serif;
   font-style: italic;
   color: #999;
-  margin: 15px 0 0;
 }
 @media screen and (max-width: 39.9375em) {
   .team-profession {
@@ -532,8 +550,8 @@
 }
 .logos img:hover {
   position: relative;
-  left: -10px;
   top: -10px;
+  left: -10px;
 }
 @media screen and (max-width: 63.9375em) {
   .logos img {
@@ -541,26 +559,26 @@
   }
 }
 .work-img {
-  display: block;
   position: relative;
+  display: block;
 }
 .work-img img {
   width: 100%;
 }
 .work-img_hover {
-  opacity: 0;
-  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   cursor: pointer;
+  text-align: center;
+  opacity: 0;
   color: #fff;
+  background: linear-gradient(to bottom, rgba(243,129,129,0.9), rgba(252,227,138,0.9));
   transition: ease 0.5s all;
 }
 .work-img_hover .icon {
@@ -570,24 +588,24 @@
   opacity: 1;
 }
 .work-title {
-  font: 400 14px montserrat, arial, sans-serif;
   margin: 15px 0 0 0;
+  font: 400 14px montserrat, arial, sans-serif;
   text-transform: uppercase;
 }
 .work-dscr {
+  margin: 10px 0 0 0;
   font: 300 15px roboto, arial, sans-serif;
   font-style: italic;
-  margin: 10px 0 0 0;
 }
 .testimonial {
   margin: 100px 0 130px;
 }
 .testimonial-img {
+  overflow: hidden;
   width: 205px;
   height: 205px;
-  border-radius: 106px;
-  overflow: hidden;
   margin: auto;
+  border-radius: 106px;
 }
 @media screen and (max-width: 63.9375em) {
   .testimonial-img {
@@ -596,11 +614,11 @@
   }
 }
 .testimonial-item_text {
+  margin-bottom: 10px;
   font: 300 24px roboto, arial, sans-serif;
   font-style: italic;
-  color: #999;
   line-height: 1.5;
-  margin-bottom: 10px;
+  color: #999;
 }
 @media screen and (max-width: 63.9375em) {
   .testimonial-item_text {
@@ -613,10 +631,10 @@
   }
 }
 .testimonial-item_author {
-  font: 400 24px "kaushan script", arial, sans-serif;
-  color: #333;
-  vertical-align: middle;
   margin-bottom: 0;
+  font: 400 24px "kaushan script", arial, sans-serif;
+  vertical-align: middle;
+  color: #333;
 }
 @media screen and (max-width: 63.9375em) {
   .testimonial-item_author {
@@ -629,19 +647,19 @@
   }
 }
 .testimonial-item_author:before {
-  content: '';
+  display: inline-block;
   width: 60px;
   height: 3px;
+  margin-right: 5px;
+  content: '';
+  vertical-align: middle;
   color: #f38181;
   background-color: #f38181;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 5px;
 }
 .clients {
+  padding-bottom: 130px;
   background: linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("../i/clients-bg.jpg");
   background-size: cover;
-  padding-bottom: 130px;
 }
 @media screen and (max-width: 63.9375em) {
   .clients {
@@ -669,29 +687,29 @@
   }
 }
 .clients-name {
+  margin: 0;
   font: 400 14px montserrat, arial, sans-serif;
   color: #333;
-  margin: 0;
 }
 .clients-profession {
+  margin: 10px 0 20px 0;
   font: 300 15px roboto, arial, sans-serif;
   font-style: italic;
   color: #999;
-  margin: 10px 0 20px 0;
 }
 .clients .hr.mod-testimonial {
   width: 60px;
   height: 3px;
-  background-color: #f38181;
-  border: 0;
   margin: 0;
+  border: 0;
+  background-color: #f38181;
 }
 .clients-comment {
-  font: 400 15px roboto, arial, sans-serif;
-  color: #777;
-  line-height: 1.5;
-  margin-top: 20px;
   max-width: 370px;
+  margin-top: 20px;
+  font: 400 15px roboto, arial, sans-serif;
+  line-height: 1.5;
+  color: #777;
 }
 .blog-img {
   position: relative;
@@ -706,28 +724,28 @@
   left: -10px;
   width: 62px;
   height: 72px;
-  background: #95e1d3;
-  color: #fff;
   text-align: center;
+  color: #fff;
+  background: #95e1d3;
 }
 .blog-date_day {
-  font: 700 30px montserrat, arial, sans-serif;
   margin: 7px 0 0;
+  font: 700 30px montserrat, arial, sans-serif;
 }
 .blog-date_month {
+  margin: 0;
   font: 300 15px roboto, arial, sans-serif;
   font-style: italic;
-  margin: 0;
 }
 .blog-title {
+  margin: 20px 0 0;
   font: 400 14px montserrat, arial, sans-serif;
   color: #333;
-  margin: 20px 0 0;
 }
 .blog-dscr {
+  margin: 20px 0 0;
   font: 400 15px roboto, arial, sans-serif;
   color: #999;
-  margin: 20px 0 0;
 }
 .blog-info {
   margin-top: 10px;
@@ -743,7 +761,7 @@
   margin: 0;
 }
 .blog-info .icon {
-  font: 15px;
+  font-size: 15px;
   color: #95e1d3;
 }
 .blog-info span {
@@ -770,20 +788,25 @@
   color: #f38181;
 }
 .top-bar {
-  background: #f38181;
   padding: 0;
+  background: #f38181;
 }
 .top-bar-title {
   margin: 0;
+  color: #fff;
+  transition: ease 0.5s all;
+}
+.top-bar-title:hover {
+  color: #fce38a;
 }
 .top-bar .menu {
   background: none;
 }
 .top-bar .menu a {
   font: 700 14px montserrat, arial, sans-serif;
-  color: #fff;
-  transition: 0.3s;
   text-transform: uppercase;
+  color: #fff;
+  transition: ease 0.5s all;
 }
 @media screen and (max-width: 39.9375em) {
   .top-bar .menu a {
@@ -793,21 +816,4 @@
 .top-bar .menu a:hover {
   color: #fce38a;
   text-decoration: underline;
-}
-.video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-@media screen and (max-width: 39.9375em) {
-  .video {
-    display: none;
-  }
 }

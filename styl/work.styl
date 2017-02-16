@@ -1,26 +1,27 @@
 .work
 
     &-img
-        display block
         position relative
+        display block
 
         img
             width 100%
 
         &_hover
-            opacity 0
-            background linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow)
+
             position absolute
             top 0
-            left 0
             right 0
             bottom 0
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            cursor: pointer;
+            left 0
+            display flex
+            justify-content center
+            flex-direction column
+            cursor pointer
+            text-align center
+            opacity 0
             color $color-white
+            background linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow)
             mix-transition()
 
             .icon
@@ -32,11 +33,11 @@
                 opacity 1
 
     &-title
-        font 400 14px $font-montserrat
         margin 15px 0 0 0
+        font 400 14px $font-montserrat
         text-transform uppercase
 
     &-dscr
+          margin 10px 0 0 0
           font 300 15px $font-roboto
           font-style italic
-          margin 10px 0 0 0

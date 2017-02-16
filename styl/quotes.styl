@@ -1,7 +1,7 @@
 .quotes
-    background-color $color-quotes-bg
     margin-top 120px
     padding 70px 0
+    background-color $color-quotes-bg
 
     @media $phone
         padding 25px 0
@@ -9,9 +9,9 @@
     &-square
         width 150px
         height 150px
-        border 3px solid $color-turquoise
         margin auto
         padding 25px
+        border 3px solid $color-turquoise
 
         @media $tablet
             width 75px
@@ -19,9 +19,9 @@
             padding 15px
 
         .icon
+            display block
             font-size 60px
             color $color-turquoise
-            display block
 
             @media $tablet
                 font-size 25px
@@ -29,11 +29,11 @@
     &-item
 
         &_text
+            margin-bottom 10px
             font 300 24px $font-roboto
             font-style italic
-            color $color-gray-text
             line-height 1.5
-            margin-bottom 10px
+            color $color-gray-text
 
             @media $tablet
                 font-size 20px
@@ -42,24 +42,23 @@
                 font-size 15px
 
         &_author
-              font 400 24px $font-kaushanscript
-              color $color-black-text
-              vertical-align middle
               margin-bottom 0
-
+              font 400 24px $font-kaushanscript
+              vertical-align middle
+              color $color-black-text
 
               @media $phone
                   font-size 18px
 
               &:before
-                  content ''
+                  display inline-block
                   width 60px
                   height 3px
+                  margin-right 5px
+                  content ''
+                  vertical-align middle
                   color $color-red
                   background-color $color-red
-                  display inline-block
-                  vertical-align middle
-                  margin-right 5px
 
 .orbit
 
@@ -67,10 +66,10 @@
         outline none
 
     &-button
-        color $color-arrows
         font-size 20px
         cursor pointer
-        transition 0.3s
+        color $color-arrows
+        mix-transition()
 
         &:hover,
         &:focus,

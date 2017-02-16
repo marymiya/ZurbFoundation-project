@@ -11,28 +11,28 @@
   left: -10px;
   width: 62px;
   height: 72px;
-  background: $color-turquoise;
-  color: $color-white;
   text-align: center;
+  color: $color-white;
+  background: $color-turquoise;
 }
 .blog-date_day {
-  font: 700 30px $font-montserrat;
   margin: 7px 0 0;
+  font: 700 30px $font-montserrat;
 }
 .blog-date_month {
+  margin: 0;
   font: 300 15px $font-roboto;
   font-style: italic;
-  margin: 0;
 }
 .blog-title {
+  margin: 20px 0 0;
   font: 400 14px $font-montserrat;
   color: $color-black-text;
-  margin: 20px 0 0;
 }
 .blog-dscr {
+  margin: 20px 0 0;
   font: 400 15px $font-roboto;
   color: $color-gray-text;
-  margin: 20px 0 0;
 }
 .blog-info {
   margin-top: 10px;
@@ -46,7 +46,7 @@
   margin: 0;
 }
 .blog-info .icon {
-  font: 15px;
+  font-size: 15px;
   color: $color-turquoise;
 }
 .blog-info span {

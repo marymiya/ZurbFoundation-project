@@ -13,8 +13,8 @@
 }
 .logos img:hover {
   position: relative;
-  left: -10px;
   top: -10px;
+  left: -10px;
 }
 @media $tablet {
   .logos img {

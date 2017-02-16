@@ -8,11 +8,10 @@
             margin-top 30px
 
         &_img
-          margin auto
+          overflow wrap
           width 380px
           height 259px
-          mix-transition()
-          overflow wrap
+          margin auto
           mix-transition()
 
           @media $tablet
@@ -20,28 +19,28 @@
               height auto
 
         &_hover
-            opacity 0
+            position absolute
+            top -10px
+            left -10px
+            display flex
+            justify-content center
+            flex-direction column
             width 100%
             height 100%
-            background linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow)
-            position absolute
-            left -10px
-            top -10px
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            cursor: pointer;
+            cursor pointer
+            text-align center
+            opacity 0
             color $color-white
+            background linear-gradient(to bottom, $color-gradient-red, $color-gradient-yellow)
             mix-transition()
 
             .icon
                 font-size 20px
 
             p
+                margin-top 10px
                 font 600 18px $font-montserrat
                 text-transform uppercase
-                margin-top 10px
 
         &:hover
             background-color $color-turquoise

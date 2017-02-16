@@ -1,6 +1,6 @@
 .facts {
-  background-color: $color-turquoise;
   color: $color-white;
+  background-color: $color-turquoise;
 }
 .facts-wr {
   padding: 75px 0;
@@ -35,6 +35,6 @@
   }
 }
 .facts-dscr {
-  font: 400 14px $font-montserrat;
   margin: 0;
+  font: 400 14px $font-montserrat;
 }

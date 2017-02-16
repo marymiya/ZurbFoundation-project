@@ -2,8 +2,8 @@
   border-top: 1px;
 }
 .services .icon {
-  color: $color-turquoise;
   font-size: 35px;
+  color: $color-turquoise;
 }
 @media $phone {
   .services .icon {
@@ -12,11 +12,11 @@
 }
 .services-title {
   font: 400 14px $font-montserrat;
-  color: $color-black-text;
   text-transform: uppercase;
+  color: $color-black-text;
 }
 .services-dscr {
   font: 400 15px $font-roboto;
-  color: $color-gray-text;
   line-height: 1.5;
+  color: $color-gray-text;
 }
