@@ -57,7 +57,7 @@
   box-shadow: 0 7px 0 #fce38a, 0 14px 0 #fce38a;
 }
 .story {
-  padding: 90px 0 110px;
+  padding-bottom: 110px;
 }
 .story-item {
   position: relative;
@@ -166,6 +166,7 @@
 }
 .block-header {
   margin-top: 110px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 63.9375em) {
   .block-header {
@@ -175,6 +176,7 @@
 @media screen and (max-width: 39.9375em) {
   .block-header {
     margin-top: 50px;
+    margin-bottom: 40px;
   }
 }
 .block-header .title {
@@ -260,6 +262,9 @@
 .facts-dscr {
   margin: 0;
   font: 400 14px montserrat, arial, sans-serif;
+}
+.services {
+  padding-bottom: 80px;
 }
 .services-line {
   border-top: 1px;
